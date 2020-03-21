@@ -1,0 +1,21 @@
+.yellow-btn {
+    display: inline-block;
+    font-family: $secondary-font;
+    font-weight: 600;
+    font-size: 0.9em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    background-color: $secondary-color;
+    padding: 20px 25px;
+    margin-bottom: 0;
+    border: 1px solid $secondary-color;
+    text-decoration: none;
+    transition: transform ease-in-out 0.2s;
+
+    &:hover {
+        color: #000;
+        text-decoration: none;
+        transform: scaleX(1.1);
+    }
+}

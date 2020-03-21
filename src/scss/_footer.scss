@@ -1,0 +1,41 @@
+footer.site-footer {
+    padding: 20px 0;
+    background: desaturate(darken($color: $primary-color, $amount: 25), 30);
+
+    .footer-main {
+        .menu-side {
+            ul {
+                list-style-type: none;
+                padding: 0;
+                display: inline;
+
+                li {
+                    display: inline-block;
+                    padding: 0 8px;
+
+                    a {
+                        font-family: $primary-font;
+                        font-weight: 600;
+                        color: #8a9093;
+                        font-size: 0.85em;
+                    }
+                }
+            }
+        }
+
+        .copyright-side {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            .copyright-text {
+                font-family: $primary-font;
+                font-weight: 400;
+                font-size: .8em;
+                color: $white-color;
+                text-align: right;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
