@@ -17,3 +17,15 @@ mix.js('src/js/app.js', 'dist/js')
    .setPublicPath('dist');
 
 mix.setResourceRoot('../');
+
+mix.webpackConfig(webpack => {
+   return {
+       plugins: [
+           new webpack.ProvidePlugin({
+               $: 'jquery',
+               jQuery: 'jquery',
+               'window.jQuery': 'jquery'
+           })
+       ]
+   };
+});
